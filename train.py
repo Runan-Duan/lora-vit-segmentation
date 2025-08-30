@@ -13,7 +13,8 @@ from transformers import ViTModel
 
 from lora_vit import LoraVit
 from segmentation import SegViT, CustomSegHead
-from dataset import PreprocessedPetDataset, get_pet_dataloaders
+from pet_dataset_class import PreprocessedPetDataset
+from create_dataloaders import get_pet_dataloaders
 from trainer import trainer
 from loss_and_metrics_seg import *
 
